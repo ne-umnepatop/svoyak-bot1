@@ -1,14 +1,15 @@
 import asyncio
-import config
-import datetime
-from models import *
 from aiogram import Bot, Dispatcher, executor
 from aiogram.dispatcher import FSMContext
 from aiogram import Bot, Dispatcher, types
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.utils import executor
+
+import config
+from models import *
 from db_api import DBAPI
+import datetime
 
 
 class ExcursionDataState(StatesGroup):
